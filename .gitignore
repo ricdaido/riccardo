@@ -1,220 +1,92 @@
-## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
-*.out
-*.toc
-*.fmt
-*.fot
-*.cb
-*.cb2
+\documentclass[a4paper,12pt]{report}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[backend=biber,firstinits=true,style=apa, bibstyle=authoryear,maxcitenames=3,doi=false,isbn=false,url=false]{biblatex}
 
-## Intermediate documents:
-*.dvi
-*-converted-to.*
-# these rules might exclude image files for figures etc.
-# *.ps
-# *.eps
-# *.pdf
+\addbibresource{Healthcare and Blockchain.bib}
 
-## Generated if empty string is given at "Please type another file name for output:"
-.pdf
 
-## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
-*.bcf
-*.blg
-*-blx.aux
-*-blx.bib
-*.run.xml
+\title{{ How The Need for Trust Will Impact The Healthcare Sector }\\
+	{\large ESCP Europe Business School - Paris Campus}\\    }
 
-## Build tool auxiliary files:
-*.fdb_latexmk
-*.synctex
-*.synctex(busy)
-*.synctex.gz
-*.synctex.gz(busy)
-*.pdfsync
+\author{Riccardo Daidone}
+\date{31/01/2018}
 
-## Auxiliary and intermediate files from other packages:
-# algorithms
-*.alg
-*.loa
+\geometry{a4paper,left=25mm,right=25mm}
+	\linespread{1.5}
+	
+\begin{document}
+\pagestyle{plain}
 
-# achemso
-acs-*.bib
+\maketitle
 
-# amsthm
-*.thm
+\chapter*{Abstract}
+Abstract goes here
 
-# beamer
-*.nav
-*.pre
-*.snm
-*.vrb
+\chapter*{Dedication}
+To mum and dad
 
-# changes
-*.soc
+\chapter*{Declaration}
+I declare that..
 
-# cprotect
-*.cpt
+\chapter*{Acknowledgements}
+I want to thank...
 
-# elsarticle (documentclass of Elsevier journals)
-*.spl
+\tableofcontents
 
-# endnotes
-*.ent
+\chapter[Introduction: State of healthcare, expenses, importance in daily life]{Introduction: State of healthcare, expenses, importance in daily life}
 
-# fixme
-*.lox
+\begin{enumerate}
+    \item As the Internet of Things (IoT) becomes more and more a buzzword, its real-life applications are more often put into practice. The interest of thes research is therefore to check to which level IoT can affect healthcare, also called the Internet of Medical Things (IoMT). Are our structures ready to change?
+    \item Given that the IoT will lead the quantity of shared information to grow exponentially, there will statistically correspond an increase in the number of data breaches. Often, however, this data might be sensitive, meaning that the person to which the data refers to can be reached by individuals that does not have any right to get them. Do Distributed Ledger Technologies (DLT) represent a reliable solution for our National Health Systems (NHS) and more specifically for hospitals?
+\end{enumerate}   
 
-# feynmf/feynmp
-*.mf
-*.mp
-*.t[1-9]
-*.t[1-9][0-9]
-*.tfm
+ Despite the big hype around the Distributed Ledger Technologies (DLTs), especially the Blockchain due to the enormous popularity of crypto currencies and Bitcoin in particular, this technology has not been yet deployed and exploit enough in other fields of application. In particular, even if many are articles dealing with “the future of Blockchain”, in practice very few are the application cases that are currently being run: deep research has therefore to be made in order to get why this has not yet been developed and how to eventually employ it. Most importantly, we need t be aware that this is not a technological revolution that impacts the user experience strictly speaking, since  the final user will not be impacted by the architectural changes in the software design: the user will instead be safer with its transactions, and information will be more secure (speaking in terms of reliability, meaning the safety for the user to get veritable and consistent information). 
 
-#(r)(e)ledmac/(r)(e)ledpar
-*.end
-*.?end
-*.[1-9]
-*.[1-9][0-9]
-*.[1-9][0-9][0-9]
-*.[1-9]R
-*.[1-9][0-9]R
-*.[1-9][0-9][0-9]R
-*.eledsec[1-9]
-*.eledsec[1-9]R
-*.eledsec[1-9][0-9]
-*.eledsec[1-9][0-9]R
-*.eledsec[1-9][0-9][0-9]
-*.eledsec[1-9][0-9][0-9]R
 
-# glossaries
-*.acn
-*.acr
-*.glg
-*.glo
-*.gls
-*.glsdefs
+\section{The weight of healthcare on the economy}
+The impact of healthcare on the public and private financial statements is globally growing every year. We are able to find official WHO data only until 2015, lacking the last two years (2015-2017). Looking at the trends in current expenditure in healthcare is enough to understand the importance of healthcare in our everyday life. Globally, in 2015 approximately 9.8 \% of the global GDP has been spent on healthcare \footnote{World Health Organization Global Health Expenditure database}, representing 7,6 trillion USD. In 2014, as from data shared by the World Bank, the global expenditure per capita on healthcare amounted on average at around 1059 USD (taking into consideration both public and private expense), with a CAGR slightly higher than 5.5\% since 2000 (during the same period, the worldwide GDP has reached in absolute terms at its highest peak an annual growth of 4.4\% and in 2014 growing just 2.81\%)\footnote{The World Bank national accounts data}.
+\\ If we compare the public healthcare expenditures with the public expenditures for public order and safety, on average in OECD countries the former doubles the latter \footnote{OECD National Accounts Statistics: Government expenditure by function}. Here we can find an interesting comparison between the USA and France: USA  spends 20 times more on healthcare compared to public order and safety, while France behaves in the opposite way, increasing almost sixfold the expenditure for healthcare compared to public order and safety. Despite the data related to these two countries might be misleading because of potential inefficiencies or issues related to specific country, the average data statistically represents a "good representation of reality". Moreover, there exist some disparities between lower, mid and upper-middle-income countries but for the purposes of this paper, we will focus on France. We can add another comparison that helps us understand the magnitude of the expenditures in healthcare: the investments in public education represent 4.7 \% of the global GDP in 2013 (latest data available),  a slight increase compared to the 3.9 \% in 2000 -if we take into consideration also the private expenditure, the worldwide investment in education compared to the GDP grows from 13.4\% in 2000 reaching 14 \% in 2013 \footnote {UNESCO Institute for Statistics}  
 
-# gnuplottex
-*-gnuplottex-*
+Having briefly seen which financial impact have NHSs on the nations' GDP , we understand how important would be to increase the efficiency of the NHS and therefore to optimize the scarce resources available. \\We need to make clear however that these aforementioned expenses are related to the whole national systems and hence do not refer only to the hospital sector that represents our main research objective. We can however take the data as representative of the weight that NHSs have on nations national budgets. To make things clear, NHSs expenditures comprise any medicament, drugs, reagents and all the disposables employed in clinics and hospitals, all the infrastructures, such as hospitals and clinics, as well as the content of these infrastructures, namely all machinery, the therapeutic and diagnostic equipment as well as the doctors, nurses and the HR resources needed for the functioning of the healthcare system as a whole. Quite a big deal, much more complex than education framework.
 
-# gregoriotex
-*.gaux
-*.gtex
+\section{Healthcare and society}
 
-# hyperref
-*.brf
 
-# knitr
-*-concordance.tex
-# TODO Comment the next line if you want to keep your tikz graphics files
-*.tikz
-*-tikzDictionary
+The fact that worldwide healthcare expenditure is growing more than GDP has to 
 
-# listings
-*.lol
+\section{Innovations and their diffusion}
 
-# makeidx
-*.idx
-*.ilg
-*.ind
-*.ist
+Before we dig deeper into innovations, we need to make clear what an innovation and what it is not. In \cite{rogers_diffusion_2003} we can find that "innovation is an idea, practice, or object that is perceived as new by an individual or other unit of adoption", meaning that the concept of \textit{innovation} relies on everybody's experience and cannot be recognized as such by the entirety of the public. Instead \cite{schumpeter_essays:_1989}  conceives \textit{innovation}  as "new combination of existing factors of production, embodied in new plants, and, typically, new firms producing either new commodities, or by a new, untried method, or for a new market, or by buying means of production in a new market [...] essentially putting productive resources to uses hitherto untried in practice, and withdrawing them from the uses they have served so far." The more relativistic approach underlying Rogers' thought might be valid if we take into consideration the personal point of view of the user, but this would lead to say that innovations are not as such. There might be however found a \textit{fil rouge} behind these two definitions: innovations bring something new, and the fact of being new for everyone or for few won't fundamentally change the value we grant here to innovations. What we need to be aware of is that, as \cite{schumpeter_capitalism_1942} confirms, "the innovation process, incessantly revolutionizes the economic structure from within, incessantly destroying the old one, incessantly creating a new one". Firms hence need not only to organize internally to be able and ready to face these changes, but need to be able more and more  to quickly lead changes, gaining the objective market share and/or customer segment. We will take into consideration this last definition of the term innovation, as we can find in the \citep{Oxford Dictionary of English}, "The process of making changes in something established, especially by introducing new methods, ideas, or products". This does not imply that all innovations will bring positive changes: despite the fact that nowadays we use the term to indicate a service or an artifact with a positive impact on society simplifying our everyday life, it might also be the case that innovations bring undesirable outcomes or resulting uneconomical for the social system. 
+some   and therefore the term \textit{innovation} does not have grammatically an absolute \textit{positive} connotation    
+[We do not want here to deal with the organizational issues on running an innovative business and the winning factors that might characterize such firms. Our objective is instead to make clear how innovations can make a sense]
 
-# minitoc
-*.maf
-*.mlf
-*.mlt
-*.mtc[0-9]*
-*.slf[0-9]*
-*.slt[0-9]*
-*.stc[0-9]*
+The aforementioned \cite{rogers_diffusion_2003} defines the diffusion of innovations in his book Diffusion of Innovations, about the 
 
-# minted
-_minted*
-*.pyg
 
-# morewrites
-*.mw
 
-# nomencl
-*.nlo
 
-# pax
-*.pax
 
-# pdfpcnotes
-*.pdfpc
+\chapter[Healthcare innovations: IoT, IoM(medical)T and applications to make easier hospital operations]{Healthcare innovations: IoT, IoM(medical)T and applications to make easier hospital operations}
 
-# sagetex
-*.sagetex.sage
-*.sagetex.py
-*.sagetex.scmd
+\chapter[Data recording: current and recurring data breaches (need to secure the system)]{Data recording: current and recurring data breaches (need to secure the system)}
 
-# scrwfile
-*.wrt
+\chapter[How we might edge the issue: Distributed Ledger Technology (Blockchain, Hashgraph, Hyperledger)]{How we might edge the issue: Distributed Ledger Technology (Blockchain, Hashgraph, Hyperledger)}
 
-# sympy
-*.sout
-*.sympy
-sympy-plots-for-*.tex/
+\section[Description of these ledgers]{Description of these ledgers}
 
-# pdfcomment
-*.upa
-*.upb
+\section[(Current and wanted applications of these ledgers)]{(Current and wanted applications of these ledgers)}
 
-# pythontex
-*.pytxcode
-pythontex-files-*/
+\chapter[DLT in Healthcare: Applications]{DLT in Healthcare: Applications}
 
-# thmtools
-*.loe
+\section[Issues with applications (if any)]{Issues with applications (if any)}
 
-# TikZ & PGF
-*.dpth
-*.md5
-*.auxlock
+\chapter[Summing up the findings of current applications and problems/barriers to its application]{Summing up the findings of current applications and problems/barriers to its application}
 
-# todonotes
-*.tdo
+\chapter[Conclusion, limitations and future research suggestions]{Conclusion, limitations and future research suggestions}
 
-# easy-todo
-*.lod
+\printbibliography[heading=bibintoc]
 
-# xindy
-*.xdy
-
-# xypic precompiled matrices
-*.xyc
-
-# endfloat
-*.ttt
-*.fff
-
-# Latexian
-TSWLatexianTemp*
-
-## Editors:
-# WinEdt
-*.bak
-*.sav
-
-# Texpad
-.texpadtmp
-
-# Kile
-*.backup
-
-# KBibTeX
-*~[0-9]*
-
-# auto folder when using emacs and auctex
-/auto/*
-
-# expex forward references with \gathertags
-*-tags.tex
+\end{document}
